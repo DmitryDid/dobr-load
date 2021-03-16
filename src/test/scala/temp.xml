@@ -1,0 +1,35 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:sendRequestResponse xmlns:ns2="http://soap.endpoint.fsg.ftc/">
+            <return>
+                <smev3Response>
+                    <ACTION>GetResponseResponse</ACTION>
+                    <OriginalMessageId>f70ca45d-8003-11eb-91a7-971d7eafba14</OriginalMessageId>
+                    <STATUS>responseIsDelivered</STATUS>
+                    <MessageID>fe826e97-8003-11eb-8b41-bbb1b62b2fde</MessageID>
+                    <MessageId>fe826e97-8003-11eb-8b41-bbb1b62b2fde</MessageId>
+                    <To>
+                        eyJzaWQiOjMyMTgzLCJtaWQiOiJlODQzMDIzNi04YWZiLTExZTgtYWVkYi00NTAyMTFkYjRkOGUiLCJlb2wiOjAsInNsYyI6Im1pbmNvbXN2eWF6X2VzaWFfcmVnX3NlcnZpY2VfZmluZF9hY2NvdW50XzEuMi4wX0VTSUFGaW5kQWNjb3VudFJlcXVlc3QiLCJtbm0iOiI1NDIwMDEifQ==
+                    </To>
+                    <MessagePrimaryContent>
+                        <req:ImportPaymentsResponse
+                                xmlns:req="urn://roskazna.ru/gisgmp/xsd/services/import-payments/2.1.1"
+                                xmlns:chg="http://roskazna.ru/gisgmp/xsd/Charge/2.1.1"
+                                xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.1.1"
+                                xmlns:org="http://roskazna.ru/gisgmp/xsd/Organization/2.1.1"
+                                xmlns:pkg="http://roskazna.ru/gisgmp/xsd/Package/2.1.1"
+                                xmlns:pmnt="http://roskazna.ru/gisgmp/xsd/Payment/2.1.1"
+                                xmlns:rfd="http://roskazna.ru/gisgmp/xsd/Refund/2.1.1"
+                                Id="I_1aa5aaca-d28f-48b1-9b39-b3a5f16d4e5c"
+                                RqId="I_13032ed0-4a7a-49ed-ad46-2a7206d3bca7" recipientIdentifier="3eb646"
+                                timestamp="2018-11-10T18:13:51.0">
+                            <com:ImportProtocol code="0" description="Успешно (ТЕСТОВЫЕ ДАННЫЕ!)"
+                                                entityID="I_09bcf2c6-a08a-4ea2-959d-8e198ba689d9"/>
+                        </req:ImportPaymentsResponse>
+                    </MessagePrimaryContent>
+                    <FILES/>
+                </smev3Response>
+            </return>
+        </ns2:sendRequestResponse>
+    </soap:Body>
+</soap:Envelope>
