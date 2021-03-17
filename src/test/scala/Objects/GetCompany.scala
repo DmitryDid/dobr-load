@@ -4,14 +4,14 @@ import io.gatling.core.Predef._
 import io.gatling.core.structure.ChainBuilder
 import io.gatling.http.Predef._
 
-object GetProductCategory extends Simulation {
+object GetCompany extends Simulation {
 
   private val authHeaders = Map(
     "Authorization" -> "Bearer ${access_token}")
 
-  val getProductCategory: ChainBuilder = exec(
-    http("chat/user/5")
-      .get("/ProductCategory")
+  val getCompany: ChainBuilder = exec(
+    http("/api/v1/Company")
+      .get("/Company")
       .headers {
         authHeaders
       }

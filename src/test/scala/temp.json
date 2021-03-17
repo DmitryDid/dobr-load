@@ -1,0 +1,68 @@
+[
+  {
+    "id": 7,
+    "latitude": 54.76354070000001,
+    "longitude": 83.0957392,
+    "nameOfficial": "ООО \"СОВРЕМЕННЫЕ РЕШЕНИЯ\"",
+    "name": "ХочуХинкал",
+    "representative": "Константин",
+    "phone": "+7 (913) 475-06-66",
+    "email": "Kost52605@gmail.com",
+    "inn": "5445030986",
+    "password": "52605Kos",
+    "address": "улица Ленина, 29, Бердск",
+    "timeOfWork": "09:00 - 18:00",
+    "emailConfirmed": false,
+    "playerId": "331b6622-e614-43e6-857d-6ff19f35f5c6",
+    "productCategory": {
+      "id": 5,
+      "name": "Кафе, бары, рестораны",
+      "imageName": "5-5.jpg"
+    },
+    "avatarName": "7-avatar_user.png"
+  },
+  {
+    "id": 6,
+    "latitude": 54.7587963,
+    "longitude": 83.108532,
+    "nameOfficial": "ИП Багдасарян Рафик Срапионович",
+    "name": "ХашЛаваш",
+    "representative": "Овик",
+    "phone": "+7 (968) 220-69-69",
+    "email": "bagdasarjan.cft@gmail.com",
+    "inn": "540539624985",
+    "password": "lavash5",
+    "address": "улица Ленина, 90, Бердск",
+    "timeOfWork": "12:00 - 23:00",
+    "emailConfirmed": false,
+    "playerId": "5653c463-de6e-4ab1-b418-3c43814b9e0a",
+    "productCategory": {
+      "id": 5,
+      "name": "Кафе, бары, рестораны",
+      "imageName": "5-5.jpg"
+    },
+    "avatarName": "6-avatar_user.png"
+  },
+  {
+    "id": 5,
+    "latitude": 54.992709899999994,
+    "longitude": 82.9682674,
+    "nameOfficial": "ООО \"БУДЬДОБР\"",
+    "name": "будьдобр",
+    "representative": "АРТЁМ",
+    "phone": "+7 (913) 891-69-79",
+    "email": "Ar.alekseev1982@gmail.com",
+    "inn": "5409013400",
+    "password": "1234",
+    "address": "улица Большевистская, 96, Новосибирск",
+    "timeOfWork": "10:00 - 18:00",
+    "emailConfirmed": false,
+    "playerId": "54e467ec-bff3-44ba-8b78-f8663e87630c",
+    "productCategory": {
+      "id": 7,
+      "name": "Услуги",
+      "imageName": "7-7.jpg"
+    },
+    "avatarName": "5-avatar_user.png"
+  }
+]

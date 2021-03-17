@@ -10,8 +10,4 @@ object BaseHHTP extends Simulation {
 
   val HTTPRequest: HttpProtocolBuilder = http.baseUrl("https://bdobr.ru/api/v1")
     .headers(header)
-
-  val THHPRequestWithToken: HttpProtocolBuilder = http.baseUrl("https://bdobr.ru/api/v1")
-    .headers(header)
-    .authorizationHeader("Bearer ${token}")
 }
