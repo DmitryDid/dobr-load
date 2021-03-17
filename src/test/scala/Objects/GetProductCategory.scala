@@ -10,7 +10,7 @@ object GetProductCategory extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val getProductCategory: ChainBuilder = exec(
-    http("chat/user/5")
+    http("/api/v1/chat/user/5")
       .get("/ProductCategory")
       .headers {
         authHeaders
