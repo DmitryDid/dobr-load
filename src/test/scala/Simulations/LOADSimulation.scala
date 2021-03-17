@@ -3,6 +3,7 @@ package Simulations
 import Objects.BaseHHTP.HTTPRequest
 import Objects.GetChatUser.getChatUser
 import Objects.GetCompany.getCompany
+import Objects.GetCompanyTOP.getCompanyTOP
 import Objects.GetProductCategory.getProductCategory
 import Objects.GetUserImage.getUserImage
 import Objects.GetUserStories.getUserStories
@@ -19,6 +20,7 @@ class LOADSimulation extends Simulation {
     .exec(getProductCategory)
     .exec(getCompany)
     .exec(getChatUser)
+    .exec(getCompanyTOP)
 
   setUp(
     scn.inject(
