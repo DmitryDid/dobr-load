@@ -28,14 +28,14 @@ class LOADSimulation extends Simulation {
   val scn: ScenarioBuilder = scenario("first man")
     .exec(postToken)
     .exec(getUserStories)
-    .exec(getUserImage)
+  /*  .exec(getUserImage)*/
     .exec(getProductCategory)
     .exec(getCompany)
     .exec(getChatUserById)
     .exec(getCompanyTOP)
     .exec(getOfferTOP)
     .exec(getUser)
-    .exec(getCompanyIdImage5)
+ /*   .exec(getCompanyIdImage5)
     .exec(getCompanyIdImage6)
     .exec(getCompanyIdImage5)
     .exec(getCompanyIdImage7)
@@ -44,7 +44,7 @@ class LOADSimulation extends Simulation {
     .exec(getCompanyIdImage7)
     .exec(getOfferIdImage96)
     .exec(getOfferIdImage99)
-    .exec(getOfferIdImage104)
+    .exec(getOfferIdImage104)*/
     .exec(putUserById)
     .exec(getUserById)
     .exec(getUserOffer)
@@ -63,9 +63,9 @@ class LOADSimulation extends Simulation {
     .exec(getUserStories)
 
 
-
   setUp(
     scn.inject(
-      atOnceUsers(1))
+      rampConcurrentUsers(1).to(100).during(50),
+      constantConcurrentUsers(100).during(50))
   ).protocols(HTTPRequest)
 }
