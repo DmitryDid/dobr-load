@@ -10,8 +10,8 @@ object GetUserImage extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val getUserImage: ChainBuilder = exec(
-    http("/api/v1/user/14/image")
-      .get("/user/14/image")
+    http("/api/v1/user/22/image")
+      .get("/user/22/image")
       .headers {
         authHeaders
       }
