@@ -22,5 +22,6 @@ object PutUserById extends Simulation {
       .formParam("playerId", "aee5c185-29b8-4d4c-a4bf-d7641aef-did")
       .formParam("BirthYear", "1986-07-01T00:00:00")
       .formParam("image", new File("src/test/scala/resoursces/Kiprensky_Pushkin.jpg"))
-      .check(status.is(200)))
+      .check(status.is(200))
+  ).pause(4)
 }

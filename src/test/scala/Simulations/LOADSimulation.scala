@@ -9,7 +9,7 @@ import Objects.GetCompanyCategory.getCompanyCategory
 import Objects.GetCompanyIdImage.{getCompanyIdImage1, getCompanyIdImage2, getCompanyIdImage3}
 import Objects.GetCompanyOffer.getCompanyOffer
 import Objects.GetCompanyTOP.getCompanyTOP
-import Objects.GetOfferIdImage.{getOfferIdImage1, getOfferIdImage2, getOfferIdImage3}
+import Objects.GetOfferIdImage.{getOfferIdImage10, getOfferIdImage2, getOfferIdImage3}
 import Objects.GetOfferTOP.getOfferTOP
 import Objects.GetProductCategory.getProductCategory
 import Objects.GetUser.getUser
@@ -42,7 +42,7 @@ class LOADSimulation extends Simulation {
     .exec(getCompanyIdImage2)
     .exec(getCompanyIdImage3)
     .exec(getCompanyIdImage1)
-    .exec(getOfferIdImage1)
+    .exec(getOfferIdImage10)
     .exec(getOfferIdImage2)
     .exec(getOfferIdImage3)
     .exec(putUserById)
@@ -62,10 +62,9 @@ class LOADSimulation extends Simulation {
     .exec(getUser)
     .exec(getUserStories)
 
-
   setUp(
     scn.inject(
-      rampConcurrentUsers(1).to(500).during(200),
-      constantConcurrentUsers(500).during(200))
-  ).protocols(HTTPRequest)
+      rampConcurrentUsers(1).to(2000).during(300),
+      constantConcurrentUsers(200).during(200)
+    )).protocols(HTTPRequest)
 }

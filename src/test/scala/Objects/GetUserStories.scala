@@ -16,6 +16,6 @@ object GetUserStories extends Simulation {
       .headers {
         authHeaders
       }
-      .check(status.is(200)))
-
+      .check(status.is(200))
+    ).pause(4)
 }

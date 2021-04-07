@@ -9,13 +9,14 @@ object GetOfferIdImage extends Simulation {
   private val authHeaders = Map(
     "Authorization" -> "Bearer ${access_token}")
 
-  val getOfferIdImage1: ChainBuilder = exec(
-    http("/api/v1/Offer/96/image")
-      .get("/Offer/1/image")
+  val getOfferIdImage10: ChainBuilder = exec(
+    http("/api/v1/Offer/10/image")
+      .get("/Offer/10/image")
       .headers {
         authHeaders
       }
-      .check(status.is(200)))
+      .check(status.is(200))
+  ).pause(4)
 
   val getOfferIdImage2: ChainBuilder = exec(
     http("/api/v1/Offer/104/image")
@@ -23,7 +24,8 @@ object GetOfferIdImage extends Simulation {
       .headers {
         authHeaders
       }
-      .check(status.is(200)))
+      .check(status.is(200))
+  ).pause(4)
 
   val getOfferIdImage3: ChainBuilder = exec(
     http("/api/v1/Offer/99/image")
@@ -31,5 +33,6 @@ object GetOfferIdImage extends Simulation {
       .headers {
         authHeaders
       }
-      .check(status.is(200)))
+      .check(status.is(200))
+  ).pause(4)
 }
