@@ -65,6 +65,6 @@ class LOADSimulation extends Simulation {
   setUp(
     scn.inject(
       rampConcurrentUsers(1).to(2000).during(300),
-      constantConcurrentUsers(200).during(200)
+      constantConcurrentUsers(2000).during(200)
     )).protocols(HTTPRequest)
 }
