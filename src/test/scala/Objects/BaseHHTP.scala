@@ -8,6 +8,9 @@ object BaseHHTP extends Simulation {
 
   val header = Map("Content-Type" -> "application/json;charset=utf-8")
 
-  val HTTPRequest: HttpProtocolBuilder = http.baseUrl("https://bdobr.ru/api/v1")
+  /* val HTTPRequest: HttpProtocolBuilder = http.baseUrl("https://bdobr.ru/api/v1")
+     .headers(header)*/
+
+  val HTTPRequest: HttpProtocolBuilder = http.baseUrl("http://192.168.1.232/api/v1")
     .headers(header)
 }

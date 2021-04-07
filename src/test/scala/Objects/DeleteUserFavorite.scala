@@ -10,8 +10,8 @@ object DeleteUserFavorite extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val deleteUserFavorite: ChainBuilder = exec(
-    http("/api/v1/User/22/favorite/1")
-      .delete("/User/22/favorite/1")
+    http("/api/v1/User/18/favorite/1")
+      .delete("/User/18/favorite/1")
       .headers {
         authHeaders
       }

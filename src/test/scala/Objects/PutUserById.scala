@@ -12,8 +12,8 @@ object PutUserById extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val putUserById: ChainBuilder = exec(
-    http("/api/v1/user/22")
-      .put("/User/22")
+    http("/api/v1/user/18")
+      .put("/User/18")
       .headers {
         authHeaders
       }

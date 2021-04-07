@@ -6,10 +6,10 @@ import Objects.GetChatUserById.getChatUserById
 import Objects.GetCompany.getCompany
 import Objects.GetCompanyById.getCompanyById
 import Objects.GetCompanyCategory.getCompanyCategory
-import Objects.GetCompanyIdImage._
+import Objects.GetCompanyIdImage.{getCompanyIdImage1, getCompanyIdImage2, getCompanyIdImage3}
 import Objects.GetCompanyOffer.getCompanyOffer
 import Objects.GetCompanyTOP.getCompanyTOP
-import Objects.GetOfferIdImage._
+import Objects.GetOfferIdImage.{getOfferIdImage1, getOfferIdImage2, getOfferIdImage3}
 import Objects.GetOfferTOP.getOfferTOP
 import Objects.GetProductCategory.getProductCategory
 import Objects.GetUser.getUser
@@ -18,7 +18,7 @@ import Objects.GetUserImage.getUserImage
 import Objects.GetUserOffer.getUserOffer
 import Objects.GetUserStories.getUserStories
 import Objects.PostToken.postToken
-import Objects.PutUserById._
+import Objects.PutUserById.putUserById
 import Objects.getUserFavorite.getUserFavorite
 import io.gatling.core.Predef._
 import io.gatling.core.structure.ScenarioBuilder
@@ -28,23 +28,23 @@ class LOADSimulation extends Simulation {
   val scn: ScenarioBuilder = scenario("first man")
     .exec(postToken)
     .exec(getUserStories)
-  /*  .exec(getUserImage)*/
+    .exec(getUserImage)
     .exec(getProductCategory)
     .exec(getCompany)
     .exec(getChatUserById)
     .exec(getCompanyTOP)
     .exec(getOfferTOP)
     .exec(getUser)
- /*   .exec(getCompanyIdImage5)
-    .exec(getCompanyIdImage6)
-    .exec(getCompanyIdImage5)
-    .exec(getCompanyIdImage7)
-    .exec(getCompanyIdImage6)
-    .exec(getCompanyIdImage6)
-    .exec(getCompanyIdImage7)
-    .exec(getOfferIdImage96)
-    .exec(getOfferIdImage99)
-    .exec(getOfferIdImage104)*/
+    .exec(getCompanyIdImage1)
+    .exec(getCompanyIdImage2)
+    .exec(getCompanyIdImage3)
+    .exec(getCompanyIdImage1)
+    .exec(getCompanyIdImage2)
+    .exec(getCompanyIdImage3)
+    .exec(getCompanyIdImage1)
+    .exec(getOfferIdImage1)
+    .exec(getOfferIdImage2)
+    .exec(getOfferIdImage3)
     .exec(putUserById)
     .exec(getUserById)
     .exec(getUserOffer)
@@ -65,7 +65,7 @@ class LOADSimulation extends Simulation {
 
   setUp(
     scn.inject(
-      rampConcurrentUsers(1).to(100).during(50),
-      constantConcurrentUsers(100).during(50))
+      rampConcurrentUsers(1).to(500).during(200),
+      constantConcurrentUsers(500).during(200))
   ).protocols(HTTPRequest)
 }

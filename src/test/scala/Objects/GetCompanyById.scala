@@ -10,8 +10,8 @@ object GetCompanyById extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val getCompanyById: ChainBuilder = exec(
-    http("/api/v1/Company/5")
-      .get("/Company/5")
+    http("/api/v1/Company/3")
+      .get("/Company/3")
       .headers {
         authHeaders
       }

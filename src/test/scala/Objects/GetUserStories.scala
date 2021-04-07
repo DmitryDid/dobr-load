@@ -11,8 +11,8 @@ object GetUserStories extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val getUserStories: ChainBuilder =
-    exec(http("/api/v1/user/14/stories")
-      .get("/user/14/stories/")
+    exec(http("/api/v1/user/2/stories")
+      .get("/user/1/stories/")
       .headers {
         authHeaders
       }

@@ -10,8 +10,8 @@ object GetCompanyCategory extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val getCompanyCategory: ChainBuilder = exec(
-    http("/api/v1/company/category/5")
-      .get("/Company/category/5")
+    http("/api/v1/company/category/1")
+      .get("/Company/category/1")
       .headers {
         authHeaders
       }

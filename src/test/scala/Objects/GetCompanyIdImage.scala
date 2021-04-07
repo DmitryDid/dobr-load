@@ -9,25 +9,25 @@ object GetCompanyIdImage extends Simulation {
   private val authHeaders = Map(
     "Authorization" -> "Bearer ${access_token}")
 
-  val getCompanyIdImage5: ChainBuilder = exec(
-    http("/api/v1/company/5/image")
-      .get("/Company/5/image")
+  val getCompanyIdImage1: ChainBuilder = exec(
+    http("/api/v1/company/1/image")
+      .get("/Company/1/image")
       .headers {
         authHeaders
       }
       .check(status.is(200)))
 
-  val getCompanyIdImage7: ChainBuilder = exec(
-    http("/api/v1/company/7/image")
-      .get("/Company/7/image")
+  val getCompanyIdImage2: ChainBuilder = exec(
+    http("/api/v1/company/2/image")
+      .get("/Company/2/image")
       .headers {
         authHeaders
       }
       .check(status.is(200)))
 
-  val getCompanyIdImage6: ChainBuilder = exec(
-    http("/api/v1/company/6/image")
-      .get("/Company/6/image")
+  val getCompanyIdImage3: ChainBuilder = exec(
+    http("/api/v1/company/3/image")
+      .get("/Company/3/image")
       .headers {
         authHeaders
       }

@@ -14,12 +14,7 @@
                     <MessagePrimaryContent>
                         <req:ImportPaymentsResponse
                                 xmlns:req="urn://roskazna.ru/gisgmp/xsd/services/import-payments/2.1.1"
-                                xmlns:chg="http://roskazna.ru/gisgmp/xsd/Charge/2.1.1"
                                 xmlns:com="http://roskazna.ru/gisgmp/xsd/Common/2.1.1"
-                                xmlns:org="http://roskazna.ru/gisgmp/xsd/Organization/2.1.1"
-                                xmlns:pkg="http://roskazna.ru/gisgmp/xsd/Package/2.1.1"
-                                xmlns:pmnt="http://roskazna.ru/gisgmp/xsd/Payment/2.1.1"
-                                xmlns:rfd="http://roskazna.ru/gisgmp/xsd/Refund/2.1.1"
                                 Id="I_1aa5aaca-d28f-48b1-9b39-b3a5f16d4e5c"
                                 RqId="I_13032ed0-4a7a-49ed-ad46-2a7206d3bca7" recipientIdentifier="3eb646"
                                 timestamp="2018-11-10T18:13:51.0">

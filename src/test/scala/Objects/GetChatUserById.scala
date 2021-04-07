@@ -10,8 +10,8 @@ object GetChatUserById extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val getChatUserById: ChainBuilder = exec(
-    http("/chat/user/7")
-      .get("/Chat/company/7")
+    http("/chat/user/3")
+      .get("/Chat/company/3")
       .headers {
         authHeaders
       }

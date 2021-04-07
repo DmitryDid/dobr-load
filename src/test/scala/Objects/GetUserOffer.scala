@@ -10,8 +10,8 @@ object GetUserOffer extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val getUserOffer: ChainBuilder = exec(
-    http("/api/v1/user/22/offer")
-      .get("/User/22/offer")
+    http("/api/v1/user/2/offer")
+      .get("/User/2/offer")
       .headers {
         authHeaders
       }
