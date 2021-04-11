@@ -10,11 +10,11 @@ object GetCompanyOffer extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val getCompanyOffer: ChainBuilder = exec(
-    http("/api/v1/Company/58/offer")
-      .get("/Company/58/offer")
+    http("/api/v1/Company/1/offer")
+      .get("/Company/1/offer")
       .headers {
         authHeaders
       }
       .check(status.is(200))
-  ).pause(4)
+  ).pause(5)
 }

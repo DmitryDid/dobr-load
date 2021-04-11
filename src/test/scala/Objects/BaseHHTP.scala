@@ -13,4 +13,7 @@ object BaseHHTP extends Simulation {
 
   val HTTPRequest: HttpProtocolBuilder = http.baseUrl("http://192.168.1.232/api/v1")
     .headers(header)
+
+ /* val HTTPRequest: HttpProtocolBuilder = http.baseUrl("http://localhost:5003/api/v1")
+    .headers(header)*/
 }

@@ -10,11 +10,11 @@ object GetUserById extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val getUserById: ChainBuilder = exec(
-    http("/api/v1/user/18")
-      .get("/User/18")
+    http("/api/v1/user/1")
+      .get("/User/1")
       .headers {
         authHeaders
       }
       .check(status.is(200))
-  ).pause(4)
+  ).pause(5)
 }

@@ -16,5 +16,5 @@ object GetOfferTOP extends Simulation {
         authHeaders
       }
       .check(status.is(200))
-  ).pause(4)
+  ).pause(5)
 }

@@ -30,6 +30,8 @@ class LOADSimulation extends Simulation {
     .exec(getUserStories)
     .exec(getUserImage)
     .exec(getProductCategory)
+    .exec(getProductCategory)
+    .exec(getProductCategory)
     .exec(getCompany)
     .exec(getChatUserById)
     .exec(getCompanyTOP)
@@ -64,7 +66,18 @@ class LOADSimulation extends Simulation {
 
   setUp(
     scn.inject(
-      rampConcurrentUsers(1).to(2000).during(300),
-      constantConcurrentUsers(2000).during(200)
+      rampConcurrentUsers(1).to(2000).during(200),
+      constantConcurrentUsers(2000).during(10800)
     )).protocols(HTTPRequest)
+
+  /*setUp(
+    scn.inject(
+      incrementConcurrentUsers(150)
+        .times(10)
+        .eachLevelLasting(20)
+        .separatedByRampsLasting(20)
+        .startingFrom(10),
+      constantConcurrentUsers(2000).during(10800)
+    )
+  ).protocols(HTTPRequest)*/
 }

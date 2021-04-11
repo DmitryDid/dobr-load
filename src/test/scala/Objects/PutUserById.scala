@@ -12,8 +12,8 @@ object PutUserById extends Simulation {
     "Authorization" -> "Bearer ${access_token}")
 
   val putUserById: ChainBuilder = exec(
-    http("/api/v1/user/18")
-      .put("/User/18")
+    http("/api/v1/user/5")
+      .put("/User/5")
       .headers {
         authHeaders
       }
@@ -23,5 +23,5 @@ object PutUserById extends Simulation {
       .formParam("BirthYear", "1986-07-01T00:00:00")
       .formParam("image", new File("src/test/scala/resoursces/Kiprensky_Pushkin.jpg"))
       .check(status.is(200))
-  ).pause(4)
+  ).pause(5)
 }

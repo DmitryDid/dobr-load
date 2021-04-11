@@ -11,5 +11,9 @@ object PostToken extends Simulation {
       .post("/auth/token/user/aee5c185-29b8-4d4c-a4bf-d7641aefc556")
       .check(status.is(200))
       .check(jsonPath("$.access_token").saveAs("access_token"))
-  ).pause(4)
+      .check(jsonPath("$.access_token").saveAs("access_token2"))
+      .check(jsonPath("$.access_token").saveAs("access_token3"))
+      .check(jsonPath("$.access_token").saveAs("access_token4"))
+      .check(jsonPath("$.access_token").saveAs("access_token5"))
+  ).pause(5)
 }

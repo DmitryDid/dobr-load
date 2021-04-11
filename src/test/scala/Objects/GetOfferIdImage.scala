@@ -16,7 +16,7 @@ object GetOfferIdImage extends Simulation {
         authHeaders
       }
       .check(status.is(200))
-  ).pause(4)
+  ).pause(5)
 
   val getOfferIdImage2: ChainBuilder = exec(
     http("/api/v1/Offer/104/image")
@@ -25,7 +25,7 @@ object GetOfferIdImage extends Simulation {
         authHeaders
       }
       .check(status.is(200))
-  ).pause(4)
+  ).pause(5)
 
   val getOfferIdImage3: ChainBuilder = exec(
     http("/api/v1/Offer/99/image")
@@ -34,5 +34,5 @@ object GetOfferIdImage extends Simulation {
         authHeaders
       }
       .check(status.is(200))
-  ).pause(4)
+  ).pause(5)
 }
